@@ -37,10 +37,9 @@ curqr = ""
 
 ws = size * 10 + 40
 w, h = ws, ws
-qrcol = (0, 0, 0)
-backg = (220, 220, 255)
-checker = (255, 255, 255)
-checker2 = (200, 200, 200)
+backg = (0, 0, 0)
+qrcol = (255, 255, 255)
+checker = (20, 20, 20)
 
 test = (100, 100, 100)
 
@@ -163,8 +162,10 @@ while running:
             running = False
         if (event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE):
             curqr = rngen()
-
     window.fill(backg)
+
+    bg()
+
     render(curqr)
 
     pygame.display.flip()
