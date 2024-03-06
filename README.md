@@ -1,4 +1,4 @@
-# randomqr
+# qrng
 a random qr code generator.
 it doesnt work.<br>
 :(
